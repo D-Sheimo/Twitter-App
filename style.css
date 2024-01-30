@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: 20%;
+  margin-left: 25%;
+}
+#container {
+  width: 500px;
+  border: 1px solid rgba(165, 162, 162, 0.2);
+}
+.topName {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+.backBtn {
+  padding-left: 5%;
+  padding-top: 10px;
+}
+.name {
+  font-size: 20px;
+  padding-left: 25px;
+  font-weight: 800;
+}
+.checkMark {
+  padding-left: 2px;
+}
+.tweetCnt {
+  padding-left: 66px;
+  font-size: 13px;
+  font-weight: 600;
+  color: grey;
+}
+.space {
+  padding-top: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.rocketImg {
+  position: absolute;
+}
+.circleBox {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -50%;
+  margin-left: 10px;
+  border: 3px solid white;
+}
+.circleImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileUser {
+  height: 180px;
+  padding-left: 14px;
+}
+.followBtn {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 5px;
+  padding-right: 12px;
+}
+.follow {
+  font-weight: 600;
+  font-size: 12px;
+  width: 75px;
+  height: 30px;
+  color: white;
+  background: #1d9bf0;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.mainName {
+  padding-top: 25px;
+  display: flex;
+  align-items:center;
+}
+.eName {
+  font-size: 18px;
+  font-weight: 800;
+}
+.userName {
+  font-size: 12px;
+  color: grey;
+}
+.joinedDate {
+  font-size: 12px;
+  color: grey;
+  padding-top: 2px;
+  padding-left: 3px;
+}
+.calenderDiv {
+  display: flex;
+  padding-top: 10px;
+  margin-left: -4px;
+}
+.calender {
+  height: 20px;
+  width: 20px;
+}
+.followCnt {
+  display: flex;
+  font-size: 12px;
+  color: grey;
+}
+.followCnt h4 {
+  padding-top: 12px;
+  padding-right: 15px;
+}
+.tweetsContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5px;
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+.titleName {
+  position: relative;
+  text-decoration: none;
+  color: grey
+}
+.titleName::after {
+  content: '';
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: #1d9bf0;
+  transform: scaleX(0);
+  transform-origin:bottom;
+  transition: transform 0.3s ease;
+}
+.titleName:hover::after {
+  transform: scaleX(2);
+}
+.responseLinks {
+  display: flex;
+  flex-direction: column;
+}
+.tweetsText {
+  font-size: 10px;
+  opacity:.7;
+}
+.mainName-1 {
+  padding-left: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2); 
+}
+.smallPic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.smallPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.eName-1 {
+  font-size: 12px;
+  font-weight:700;
+  padding-left:14px;
+}
+.checkMark-1 {
+  padding-left: 2px;
+  width: 15px;
+  height: 15px;
+}
+.userName-1 {
+  font-size: 12px;
+  color: grey;
+  padding-left:2px;
+}
+.userInfo-1 {
+display:flex;
+}
+.dot {
+ width:10px;
+ height:15px; 
+}
+.date{
+  font-size: 12px;
+  color: grey;
+}
+.tweetRow {
+  margin-top:-25px;
+  padding-left: 59px;
+  font-size: 12px;
+  padding-bottom:20px;
+  font-weight:200;
+}
+.timeline-date {
+  border-top: 1px solid rgba(29, 155, 240, 0.3);
+  padding-top: 15px;
+}
+.newPage-btn {
+  color:white; 
+  background-color: #1d9bf0;
+  border-radius: 15px;
+  font-size:13px;
+  font-weight:600;
+  padding: 5px 15px;
+  border: none;
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+.newPage-btn:hover {
+  background-color:#328eda; 
+}
+.datebtn {
+  display:flex;
+  justify-content: space-between;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 3%;
+}
+.tweet {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: 0.5px solid rgba(50, 142, 218, 0.3);
+  border-radius: 10px;
+
+}
+.name-date{
+padding-left: 2%;
+}
+.tweet-text {
+   color:grey;
+   padding-left: 5%;
+   padding-top: 5px;
+}
+.timestamp {
+  color:black;
+  padding-left: 5%;
+  padding-top: 15px;
+}
+.finalCont {
+text-align: center;
+margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
